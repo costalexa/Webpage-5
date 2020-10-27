@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  background: #47697e;
+}
+
+#main{
+  font-family: cursive;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#container{
+  position: relative;
+  top: 100px;
+  width: 500px;
+
+}
+
+#content-box{
+  background: #688b9a;
+  padding: 15px;
+  margin-bottom: 15px;
+
+}
+
+#box1{
+  font-family: cursive;
+}
+#box2{
+  font-family: cursive;
+}
+#box3{
+  font-family: cursive;
+}
+#box4{
+  font-family: cursive;
+}
+#box5{
+  font-family: cursive;
+}
+
+ul {
+  font-family: cursive;
+  position: relative;
+  margin-bottom: 13px;
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: left;
+}
+
+a {
+
+  text-decoration: none;
+  background: #688b9a;
+  padding: 15px;
+
+}
+
+a:hover{
+  background: #FCCC34;
+}
