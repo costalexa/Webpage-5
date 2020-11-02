@@ -1,3 +1,8 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(Fonts/old_london/Olondon_.otf);
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -5,12 +10,11 @@ body {
 }
 
 #main{
-  font-family: cursive;
   font-size: 45px;
   display: flex;
   justify-content: center;
 }
-
+/* XXX:  */
 #skull{
   display: flex;
   justify-content: center;
@@ -31,21 +35,6 @@ body {
 
 }
 
-#box1{
-  font-family: cursive;
-}
-#box2{
-  font-family: cursive;
-}
-#box3{
-  font-family: cursive;
-}
-#box4{
-  font-family: cursive;
-}
-#box5{
-  font-family: cursive;
-}
 
 ul {
   position: relative;
