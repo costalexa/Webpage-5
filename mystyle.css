@@ -2,7 +2,6 @@
   font-family: myFirstFont;
   src: url(Fonts/old_london/Olondon_.otf);
 }
-
 body {
   display: flex;
   justify-content: center;
