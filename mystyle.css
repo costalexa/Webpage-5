@@ -19,7 +19,7 @@
 }
 
 body {
-  background-image: url("BWSKULL.png");
+  background-image: url("HEAD.png");
   background-repeat: repeat-y;
   background-color: #fafafa;
   display: flex;
@@ -28,13 +28,7 @@ body {
 
 #main{
   font-family: myFirstFont;
-  font-size: 45px;
-  display: flex;
-  justify-content: center;
-}
-
-#skull{
-  display: flex;
+  font-size: 52px;
   justify-content: center;
 }
 
@@ -73,7 +67,7 @@ h1 {
 
 a {
   text-decoration: none;
-  background: #47697e;
+  background: #fafafa;
   padding: 10px;
 
 }
