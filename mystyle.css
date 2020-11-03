@@ -1,7 +1,23 @@
 @font-face {
   font-family: myFirstFont;
-  src: url(Fonts/old_london/Olondon_.otf);
+  src: url(fonts/CloisterBlack.ttf);
 }
+
+@font-face {
+  font-family: mySecondFont;
+  src: url(fonts/traveling_typewriter/TravelingTypewriter.ttf);
+}
+
+@font-face {
+  font-family: myThirdFont;
+  src: url(fonts/cardinal/Cardinal.ttf);
+}
+
+@font-face {
+  font-family: myFourthFont;
+  src: url(fonts/made_bon_voyage/thin.otf);
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -9,11 +25,12 @@ body {
 }
 
 #main{
+  font-family: myFirstFont;
   font-size: 45px;
   display: flex;
   justify-content: center;
 }
-/* XXX:  */
+
 #skull{
   display: flex;
   justify-content: center;
@@ -23,12 +40,13 @@ body {
 #container{
   position: relative;
   top: 100px;
-  width: 500px;
+  width: 550px;
 
 }
 
 #content-box{
   background: #688b9a;
+  font-family: myFourthFont;
   padding: 15px;
   margin-bottom: 15px;
 
@@ -36,22 +54,28 @@ body {
 
 
 ul {
-  position: relative;
-  margin-bottom: 13px;
-  list-style-type: none;
-  padding: 0px;
   display: flex;
-  justify-content: flex-end;
+  font-family: mySecondFont;
+  justify-content: center;
+  list-style-type: none;
+  position: relative;
+  padding: 0px;
+
+}
+
+h1 {
+  font-family: myThirdFont;
+  font-size: 35px;
+  text-align: center;
 }
 
 a {
-
   text-decoration: none;
-  background: #688b9a;
-  padding: 15px;
+  background: #47697e;
+  padding: 10px;
 
 }
 
 a:hover{
-  background: #FCCC34;
+  background: #688b9a;
 }
