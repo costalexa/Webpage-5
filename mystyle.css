@@ -1,4 +1,5 @@
-@font-face {
+
+  @font-face {
   font-family: myFirstFont;
   src: url(fonts/CloisterBlack.ttf);
 }
@@ -18,13 +19,18 @@
   src: url(fonts/made_bon_voyage/thin.otf);
 }
 
-body {
-  background-image: url("HEAD.png");
-  background-repeat: repeat-y;
-  display: flex;
-  justify-content: center;
-}
 
+body{
+    display: flex;
+    justify-content: center;
+    background: repeating-linear-gradient(
+    45deg,
+    #55674b,
+    #55674b 10px,
+    #889f81 10px,
+    #889f81 40px
+);
+}
 #main{
   font-family: myFirstFont;
   font-size: 52px;
@@ -40,13 +46,12 @@ body {
 }
 
 #content-box{
-  background: #688b9a;
+  background: #3f5656;
   font-family: myFourthFont;
   padding: 15px;
   margin-bottom: 15px;
 
 }
-
 
 ul {
   display: flex;
@@ -66,15 +71,55 @@ h1 {
 
 a {
   text-decoration: none;
-  background: #fafafa;
-  padding: 10px;
+  padding: 7px;
 
 }
 
 a:hover{
-  background: #688b9a;
+  background: #3f5656;
 }
 
 #slider {
   overflow: hidden;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img {
+   width: 20%;
+   float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
 }
