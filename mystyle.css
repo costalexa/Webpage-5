@@ -19,9 +19,11 @@
 }
 
 body {
+  background-image: url("BWSKULL.png");
+  background-repeat: repeat-y;
+  background-color: #fafafa;
   display: flex;
   justify-content: center;
-  background: #47697e;
 }
 
 #main{
