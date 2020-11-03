@@ -21,7 +21,6 @@
 body {
   background-image: url("HEAD.png");
   background-repeat: repeat-y;
-  background-color: #fafafa;
   display: flex;
   justify-content: center;
 }
@@ -74,4 +73,8 @@ a {
 
 a:hover{
   background: #688b9a;
+}
+
+#slider {
+  overflow: hidden;
 }
