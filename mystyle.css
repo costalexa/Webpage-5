@@ -32,15 +32,15 @@ body{
 }
 #main{
   font-family: myFirstFont;
-  font-size: 52px;
+  font-size: 57px;
   justify-content: center;
 }
 
 
 #container{
   position: relative;
-  top: 100px;
-  width: 550px;
+  top: 60px;
+  width: 600px;
 
 }
 
