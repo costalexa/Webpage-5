@@ -23,13 +23,14 @@
 body{
     display: flex;
     justify-content: center;
-    background: repeating-linear-gradient(
+    background: linear-gradient(
     45deg,
     #55674b,
-    #55674b 10px,
-    #889f81 10px,
-    #889f81 40px
+    #55674b 80%,
+    #889f81 20%,
+    #889f81
 );
+    background-size: 100% 20px;
 }
 #main{
   font-family: myFirstFont;
@@ -76,7 +77,7 @@ a {
 }
 
 a:hover{
-  background: #3f5656;
+  background: #889f81;
 }
 
 #slider {
