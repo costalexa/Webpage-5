@@ -58,7 +58,7 @@ ul {
   justify-content: center;
   list-style-type: none;
   position: relative;
-  padding: 0px;
+  padding: 10px;
 
 }
 
@@ -75,7 +75,7 @@ a {
 }
 
 a:hover{
-  background: #3f5656;
+  background: #55674b;
 }
 
 #slider {
