@@ -1,127 +1,132 @@
-@font-face {
-  font-family: myFirstFont;
-  src: url(fonts/CloisterBlack.ttf);
-}
-
-@font-face {
-  font-family: mySecondFont;
-  src: url(fonts/traveling_typewriter/TravelingTypewriter.ttf);
-}
-
-@font-face {
-  font-family: myThirdFont;
-  src: url(fonts/cardinal/Cardinal.ttf);
-}
-
-@font-face {
-  font-family: myFourthFont;
-  src: url(fonts/made_bon_voyage/thin.otf);
-}
-
 
 body{
-    display: flex;
-    justify-content: center;
     background: linear-gradient(
-    45deg,
+    to bottom,
     #55674b,
-    #55674b 60%,
-    #889f81 40%,
+    #55674b 50%,
+    #889f81 50%,
     #889f81
 );
+
+  background-size: 100% 20px;
 }
+
 #main{
   font-family: myFirstFont;
   font-size: 54px;
   justify-content: center;
 }
 
-
 #container{
   position: relative;
-  top: 60px;
-  width: 574px;
+  margin: 0 auto;
+  top: 150px;
+  height: 300px;
+  width: 300px;
+  background: #FFF;
 
 }
 
-#content-box{
-  background: #3f5656;
-  font-family: myFourthFont;
-  padding: 15px;
-  margin-bottom: 15px;
-
+/*
+#face {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 200px;
+  height: 200px;
+  background: pink;
+  animation-play-state: paused;
 }
 
-ul {
-  display: flex;
-  font-family: mySecondFont;
-  justify-content: center;
-  list-style-type: none;
+#eye {
+  position: absolute;
+  left: 25px;
+  top: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: #000;
+  animation-play-state: inherit;
+}
+
+
+#bone-rect {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 400px;
+  height: 50px;
+  background: #CCC;
+}
+
+#bone-knob {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: #CCC;
+}
+
+.knob-loc {
+  left: -25px;
+  top: -25px;
+}
+
+.knob-loc2 {
+  left: 375px;
+  top: 25px;
+}
+
+.knob-loc3 {
+  left: 375px;
+  top: -25px;
+}
+
+.knob-loc4 {
+  left: -25px;
+  top: 25px;
+}
+
+#bone{
   position: relative;
-  padding: 10px;
-
 }
 
-h1 {
-  font-family: myThirdFont;
-  font-size: 35px;
-  text-align: center;
+.bone {
+  transform: rotate(40deg);
+  top: 75px;
+  left: -10px;
 }
 
-a {
-  text-decoration: none;
-  padding: 7px;
-
+.bone2 {
+  transform: rotate(-40deg);
+  top: 125px;
+  left: -60px;
 }
 
-a:hover{
-  background: #55674b;
+#pupil {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #FFF;
+  animation-name: look-about;
+  animation-duration: 3s;
+  animation-play-state: inherit;
+  animation-iteration-count: infinite;
 }
 
-#slider {
-  overflow: hidden;
-}
-#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  animation: 15s slider infinite;
-}
-#slider figure img {
-   width: 20%;
-   float: left;
+@keyframes look-about {
+  0% {left: 20px;}
+  5% {left: 30px;}
+  30% {left: 30px;}
+  35% {left: 10px;}
+  60% {left: 10px;}
+  65% {left: 20px;}
+  100% {left: 20px;}
 }
 
-@keyframes slider {
-  0% {
-    left: 0;
-  }
-  15% {
-    left: 0%;
-  }
-  20% {
-    left: -100%;
-  }
-  35% {
-    left: -100%;
-  }
-  40% {
-    left: -200%;
-  }
-  55% {
-    left: -200%;
-  }
-  60% {
-    left: -300%;
-  }
-  75% {
-    left: -300%;
-  }
-  80% {
-    left: -400%;
-  }
-  95% {
-    left: -400%;
-  }
+#face:hover {
+  animation-play-state: running;
 }
