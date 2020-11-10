@@ -51,6 +51,80 @@ body {
 
 }
 
+#partyhat {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid #E25178;
+  top: -55px;
+  left: 100px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  transform: rotate(15deg);
+  z-index: 3;
+
+}
+
+.polka {
+  border-radius: 100%;
+  background: #FFF;
+  top: 12px;
+  left: -5px;
+  width: 5px;
+  height: 5px;
+
+}
+
+.polka2 {
+  border-radius: 100%;
+  background: #FFF;
+  top: 15px;
+  left: 10px;
+  width: 5px;
+  height: 5px;
+
+}
+
+.polka3 {
+  border-radius: 100%;
+  background: #FFF;
+  top: 16px;
+  left: -17px;
+  width: 5px;
+  height: 5px;
+
+}
+
+.polka4 {
+  border-radius: 100%;
+  background: #FFF;
+  top: 16px;
+  left: -5px;
+  width: 5px;
+  height: 5px;
+
+}
+
+.polka4 {
+  border-radius: 100%;
+  background: #FFF;
+  top: 17px;
+  left: 12px;
+  width: 5px;
+  height: 5px;
+
+}
+
+.polka6 {
+  border-radius: 100%;
+  background: #FFF;
+  top: 18px;
+  left: -17px;
+  width: 5px;
+  height: 5px;
+
+}
+
 #Leye {
   display: block;
   background: #000;
