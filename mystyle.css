@@ -1,132 +1,205 @@
+body {
+    background: #F5F5DC;
 
-body{
-    background: linear-gradient(
-    to bottom,
-    #55674b,
-    #55674b 50%,
-    #889f81 50%,
-    #889f81
-);
+
 
   background-size: 100% 20px;
-}
-
-#main{
-  font-family: myFirstFont;
-  font-size: 54px;
-  justify-content: center;
 }
 
 #container{
   position: relative;
   margin: 0 auto;
-  top: 150px;
-  height: 300px;
-  width: 300px;
-  background: #FFF;
-
-}
-
-/*
-#face {
-  position: absolute;
-  left: 50px;
-  top: 50px;
-  width: 200px;
-  height: 200px;
-  background: pink;
-  animation-play-state: paused;
-}
-
-#eye {
-  position: absolute;
-  left: 25px;
-  top: 40px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  background: #000;
-  animation-play-state: inherit;
-}
-
-
-#bone-rect {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 400px;
-  height: 50px;
-  background: #CCC;
-}
-
-#bone-knob {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  background: #CCC;
-}
-
-.knob-loc {
-  left: -25px;
-  top: -25px;
-}
-
-.knob-loc2 {
-  left: 375px;
-  top: 25px;
-}
-
-.knob-loc3 {
-  left: 375px;
-  top: -25px;
-}
-
-.knob-loc4 {
-  left: -25px;
-  top: 25px;
-}
-
-#bone{
-  position: relative;
-}
-
-.bone {
-  transform: rotate(40deg);
   top: 75px;
-  left: -10px;
+  height: 450px;
+  width: 550px;
+  background: linear-gradient(
+  to bottom,
+  #55674b,
+  #55674b 50%,
+  #889f81 50%,
+  #889f81
+
+  );
+
+  background-size: 100% 20px;
+
 }
 
-.bone2 {
-  transform: rotate(-40deg);
-  top: 125px;
-  left: -60px;
-}
-
-#pupil {
+#fox {
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 215px;
+  height: 275px;
   position: absolute;
-  left: 20px;
-  top: 20px;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
-  background: #FFF;
-  animation-name: look-about;
-  animation-duration: 3s;
-  animation-play-state: inherit;
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+
+}
+
+#head {
+  display: block;
+  background: #ff781f;
+  border-radius: 50%;
+  top: 0px;
+  right: 0px;
+  width: 184px;
+  height: 184px;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+
+}
+
+#Leye {
+  display: block;
+  background: #000;
+  border-radius: 18px 18px 0 0;
+  bottom: 40px;
+  left: 37px;
+  width: 18px;
+  height: 9px;
+  position: absolute;
+  z-index: 3;
+  animation-name: blink;
+  animation-duration: 5s;
+  animation-play-state: infinite;
   animation-iteration-count: infinite;
+
 }
 
-@keyframes look-about {
-  0% {left: 20px;}
-  5% {left: 30px;}
-  30% {left: 30px;}
-  35% {left: 10px;}
-  60% {left: 10px;}
-  65% {left: 20px;}
-  100% {left: 20px;}
+#Reye {
+  display: block;
+  background: #000;
+  border-radius: 18px 18px 0 0;
+  bottom: 40px;
+  right: 37px;
+  width: 18px;
+  height: 9px;
+  position: absolute;
+  z-index: 3;
+  animation-name: blink;
+  animation-duration: 5s;
+  animation-play-state: infinite;
+  animation-iteration-count: infinite;
+
 }
 
-#face:hover {
-  animation-play-state: running;
+#left {
+  display: block;
+  background: #F5F5DC;
+  border-radius: 50%;
+  bottom: -92px;
+  content: '';
+  left: -92px;
+  width: 184px;
+  height: 184px;
+  position: absolute;
+  z-index: 2;
+
+  }
+
+#right {
+  display: block;
+  background: #F5F5DC;
+  border-radius: 50%;
+  bottom: -92px;
+  content: '';
+  right: -92px;
+  width: 184px;
+  height: 184px;
+  position: absolute;
+  z-index: 2;
+
+}
+
+#Lear {
+  display: block;
+  border-radius: 0 93px 0 0;
+  background: #ff8b3d;
+  top: 0px;
+  left: 31px;
+  width: 93px;
+  height: 93px;
+  position: absolute;
+
+}
+
+#Rear {
+  display: block;
+  border-radius: 93px 0 0 0;
+  background: #ff8b3d;
+  top: 0px;
+  right: 0px;
+  width: 93px;
+  height: 93px;
+  position: absolute;
+
+}
+
+#nose {
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  top: 169px;
+  right: 78px;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  z-index: 3;
+  animation-play-state: infinite;
+
+}
+
+#body {
+  display: block;
+  background: #ff781f;
+  border-radius: 0 214px 214px 0;
+  bottom: 0px;
+  right: 0px;
+  width: 107px;
+  height: 214px;
+  position: absolute;
+
+}
+
+
+#tailtip {
+  display: block;
+  background: #F5F5DC;
+  border-radius: 0 5px 25px 5px;
+  content: '';
+  top: 167px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 3;
+
+}
+
+#tail {
+  display: block;
+  background: #ff781f;
+  border-radius: 0 0 214px 214px;
+  bottom: 0px;
+  right: 0px;
+  width: 215px;
+  height: 107px;
+  position: absolute;
+
+}
+
+@keyframes blink {
+  15% {
+    height: 1px;
+  }
+  45% {
+    height: 9px;
+  }
+  50% {
+    height: 1px;
+  }
+
 }
